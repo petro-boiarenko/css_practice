@@ -12,8 +12,9 @@
   grid-template-columns: repeat(2, 200px);
   padding: 30px 35px;
   gap: 40px 30px;
-
-  @media (min-width: 1000px) {
+}
+@media (min-width: 1000px) {
+  .main {
     grid-template-columns: repeat(4, 200px);
   }
 }
@@ -24,16 +25,15 @@
   justify-content: flex-end;
   align-items: center;
 }
+
 .section__photo {
   position: relative;
   border-radius: 50%;
   width: 100%;
-
   transition: border-radius 1s;
-
-  &:hover {
-    border-radius: 20px;
-  }
+}
+.section__photo:hover {
+  border-radius: 20px;
 }
 
 .section__rank {
@@ -65,10 +65,9 @@
   font-size: 18px;
   line-height: 120%;
   text-align: center;
-
-  &::after {
-    content: ",";
-  }
+}
+.extra__sport::after {
+  content: ",";
 }
 
 .extra__pay::after {
@@ -86,13 +85,14 @@
 .person {
   padding: 10px;
   transition: transform 1s;
-
-  &:hover {
-    background-color: #eeeeee;
-    transform: scale(1.2);
-  }
+}
+.person:hover {
+  background-color: #eeeeee;
+  transform: scale(1.2);
 }
 
 .person:hover .details__extra {
   visibility: visible;
 }
+
+/*# sourceMappingURL=main.css.map */
